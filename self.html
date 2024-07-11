@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="heading">
+                Password Generator
+            </div>
+
+            <div class="display">
+                <input type="text" id="passwordDisplay" readonly placeholder="Password">
+                <button class="btn">
+                    <img src="copy.svg" alt="" srcset="">
+                </button>
+
+            </div>
+            <div class="main">
+                <div class="header">
+                    <h1>Password Strength</h1>
+                    <span class="passvalue"></span>
+                </div>
+
+                <input type="range" min="1" max="20" step="1" class="slider">
+
+                <div>
+                    <div class="check">
+                        <input type="checkbox" name="" id="uppercase" />
+                        <label for="uppercase">include uppercase letters</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="" id="lowercase" />
+                        <label for="lowercase">include lowercase letters</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="" id="numbers" />
+                        <label for="numbers">include numbers</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="" id="symbols" />
+                        <label for="symbols">include symbols</label>
+                    </div>
+                </div>
+                <div class="strength">
+                    <h1>strenght</h1>
+                    <div class="glow">
+
+                    </div>
+                </div>
+                <button class="generateBtn">
+                    Generate Password 
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
